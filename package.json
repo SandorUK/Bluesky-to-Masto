@@ -1,0 +1,20 @@
+{
+  "name": "bluesky-to-masto",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "daemon": "pm2 start index.js --name bluesky2mastodon"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.16.3",
+    "axios": "^1.11.0",
+    "dotenv": "^16.6.1",
+    "form-data": "^4.0.4",
+    "formdata-node": "^6.0.3",
+    "fs-extra": "^11.1.1",
+    "node-fetch": "^3.3.2",
+    "pm2": "^6.0.8",
+    "undici": "^7.15.0"
+  }
+}
