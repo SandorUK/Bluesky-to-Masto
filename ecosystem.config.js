@@ -1,10 +1,10 @@
-// ecosystem.config.js
-export default {
+module.exports = {
   apps: [{
     name: 'bluesky-to-masto',
     script: './index.js',
-    cron_restart: '*/5 * * * *',
+    watch: false,
+    autorestart: false,
     stop_exit_codes: [0],
-    autorestart: false
+    cron_restart: '*/5 * * * *' // кожні 5 хвилин
   }]
-};
+}
