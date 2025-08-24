@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "daemon": "pm2 start index.js --name bluesky2mastodon"
+    "daemon": "pm2 start ecosystem.config.js"
   },
   "dependencies": {
     "@atproto/api": "^0.16.3",
